@@ -1,8 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import Home from './Home'
 
-const Home = () => <h3>Home</h3>
+// const HomeComponent = Home
 
+// console.log(HomeComponent)
 const User = ({ userId }) => <h3>{`User ${userId}`}</h3>
 const mapStateToProps = ({ location }) => ({
   userId: location.payload.id
